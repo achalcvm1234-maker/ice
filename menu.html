@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>...same navbar...</nav>
+
+<h1 class="page-title">🍨 MENU PAGE</h1>
+
+<!-- Search bar -->
+<input type="text" id="searchInput" placeholder="Search items..." />
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://source.unsplash.com/200x200/?vanilla-icecream">
+    <h3>Vanilla</h3><p>₹50</p>
+    <button onclick="orderItem('Vanilla',50)">Order</button>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/200x200/?chocolate-icecream">
+    <h3>Chocolate</h3><p>₹70</p>
+    <button onclick="orderItem('Chocolate',70)">Order</button>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/200x200/?strawberry-icecream">
+    <h3>Strawberry</h3><p>₹60</p>
+    <button onclick="orderItem('Strawberry',60)">Order</button>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/200x200/?mango-icecream">
+    <h3>Mango</h3><p>₹65</p>
+    <button onclick="orderItem('Mango',65)">Order</button>
+  </div>
+
+  <!-- Add other cards similarly -->
+
+</div>
+
+<!-- Firebase SDKs (v8) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<!-- Firebase Initialization -->
+<script src="js/firebase.js"></script>
+
+<!-- Custom Scripts -->
+<script src="js/order.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h1>🧾 BILL PAGE</h1>
+
+<p id="item"></p>
+<p id="price"></p>
+
+<button onclick="window.print()">Print</button>
+<!-- Firebase CDN (v8 - simple) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<!-- Your Firebase File -->
+<script src="js/firebase.js"></script>
+<script>
+item.innerText="Item: "+localStorage.getItem("billItem");
+price.innerText="Price: ₹"+localStorage.getItem("billPrice");
+</script>
